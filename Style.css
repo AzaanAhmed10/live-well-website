@@ -7,6 +7,9 @@ body {
 body {
   font-size: large;
 }
+body {
+  background-color: red;
+}
 .Hobbies p {
     font-size: 30px;
 }
