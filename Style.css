@@ -1,21 +1,37 @@
-body {
-    background-image: url(background.jpg)
+body.home {
+  background-image: url(background1.jpg);
+   background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
 }
+
+body.about {
+  background-image: url(background4.jpg);
+   background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+body.wellness {
+  background-image: url(background5.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+min-height: 100vh;
+
+}
+
 body { 
-    font-style: oblique;
-}
-body {
-  font-size: large;
-}
-body {
-  background-color: red;
-}
-.Hobbies p {
-    font-size: 30px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
 }
 
 body {
- color: whitesmoke;
+  font-size:larger;
+}
+
+body {
+ color: black;
 }
 header {
   color: lightgreen;
@@ -34,12 +50,6 @@ nav a {
   font-size: 28px;
   transition: 0.3s;
 }
-nav a:hover {
-  color: whitesmoke;
-}
-button {
-  color: orange;
-}
 nav {
   list-style: georgian;
 }
@@ -51,13 +61,13 @@ nav {
   padding: 15px;
 }
 .H {
-  color: yellowgreen;
+  color: seagreen;
 }
 h2 {
   font-size: 30px;
 }
 span {
-  color: lightgreen;
+  color: orange;
 }
 .btn {
   background-color: green;
@@ -67,13 +77,180 @@ span {
   border-radius: 6px;
 }
 .hero {
+  width: 80%;
+  max-width: 700px;
+
+  margin: 80px auto;        /* center + space outside */
+  padding: 40px 20px;      /* space inside */
+
+  background-color: rgba(255, 255, 255, 0.2);  /* white box */
+
+  border-radius: 15px;     /* rounded corners */
   text-align: center;
+
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);  /* shadow effect */
+}
+@media (max-width: 768px) {
+  .hero {
+    width: 90%;
+    padding: 30px 15px;
+  }
 }
 img {
-  width: 400px;
+  width: 320px;
   display: ruby;
   margin: 30px auto;
   border-radius: 10px;
-  box-shadow: 0px 4px 10px rgba(0,0,0,0.4);
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.9);
   transition: 0.3s;
+
+  display: block;
+  margin: 0 auto;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(0,0,0,0.5);
+  padding: 15px;
+  color: green;
+}
+
+nav a {
+  color: whitesmoke;
+  text-decoration: none;
+  margin: 10px;
+  font-size: 18px;
+  font-width: initial;
+}
+/* NAVBAR */
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0,0,0,0.5);
+  padding: 15px;
+}
+
+/* NAV LINKS */
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 20px;
+  font-size: 25px;
+  transition: 0.3s;
+  padding: 10px;
+}
+
+/* HOVER EFFECT */
+nav a:hover {
+  color: black;
+}
+
+/* MOBILE NAVBAR */
+@media (max-width: 768px) {
+
+  nav {
+    flex-direction: column;
+  }
+
+  nav a {
+    margin: 10px 0;
+  }
+
+}
+.H20 {
+  color: darkgoldenrod;
+  padding: 15px;
+  background-color: rgba(0,0,0,0.4);
+  text-align: center;
+  backdrop-filter: blur();
+}
+ 
+.H2 {
+  color: goldenrod;
+}
+.hero h1 {
+  color: darkgreen;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+}
+.hero {
+  background-color: rgba(255,255,255,0.2);
+  backdrop-filter: blur(8px);
+  padding: 20px;
+  border-radius: 10px;
+}
+section {
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 25px;
+  margin: 30px auto;
+  width: 80%;
+  border-radius: 12px;
+}
+footer {
+  text-align: center;
+  padding: 15px;
+  background-color: rgba(0,0,0,0.5);
+  color: white;
+  margin-top: 40px;
+}
+.sp1 {
+color: brown;
+}
+.f1 {
+color: brown;
+}
+.H3 {
+  color: silver;
+  text-align: center;
+  padding: 15px;
+  background-color: rgba(0,0,0,0.3);
+  .card {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 12px;
+  padding: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+}
+.hero {
+  animation: fadeIn 2s ease;
+}
+
+.hero a {
+  transition: 0.3s;
+}
+
+.hero a:hover {
+  transform: scale(1.05);
+  background-color: darkorange;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+nav a {
+  position: relative;
+}
+
+nav a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background: whitesmoke;
+  left: 0;
+  bottom: -5px;
+  transition: 0.3s;
+}
+
+nav a:hover::after {
+  width: 100%;
 }
