@@ -316,13 +316,14 @@ img {
 
   p,
   nav a {
+    margin-top: 10px;
     font-size: 16px;
   }
 }
 .hero a {
   display: inline-block;
-  margin-top: 20px;
-  padding: 10px 20px;
+  margin-top: 10px;
+  padding: 20px 20px;
   background-color: orange;
   color: white;
   text-decoration: none;
