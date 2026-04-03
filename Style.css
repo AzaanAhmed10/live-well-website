@@ -254,3 +254,77 @@ nav a::after {
 nav a:hover::after {
   width: 100%;
 }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 15px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+}
+
+.hero,
+section {
+  width: 90%;
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 25px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+}
+
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .hero,
+  section {
+    width: 95%;
+    padding: 18px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  p,
+  nav a {
+    font-size: 16px;
+  }
+}
+.hero a {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: orange;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+}
